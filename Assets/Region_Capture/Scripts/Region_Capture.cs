@@ -130,7 +130,7 @@ public class Region_Capture : MonoBehaviour
             m_renderer.material.SetFloat("_KX", k_x);
             m_renderer.material.SetFloat("_KY", k_y);
 
-            VideoBackgroundTexure = VuforiaRenderer.Instance.VideoBackgroundTexture;
+            VideoBackgroundTexure = VuforiaRenderer.Instance.VideoBackgroundTexture as Texture2D;
 
             if (!VideoBackgroundTexure || !meshFilter) goto End;
 
